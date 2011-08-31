@@ -14,7 +14,7 @@ The utility consists of six essential classes:
 * ComponentViewMediator
 * ComponentView
 
-For more details about specific classes and the signals please refer to the documentation found in the "docs folder":https://github.com/pederan/robotlegs-extensions-view-utility/tree/master/docs.
+For more details about specific classes and the signals please refer to the "documentation":http://mfcampaign.net/pederan/robotlegs-extensions-view-utility/docs/ ( also found in the "docs folder":https://github.com/pederan/robotlegs-extensions-view-utility/tree/master/docs/ ).
 
 h3. Minimum requirements
 
@@ -32,7 +32,7 @@ The minimum Flash Player requirement is version 9, but the @ComponentViewMediato
 
 h3. Usage / Examples
 
-All you need is your main context class to extend @ViewSignalContext@. This enables the automatic mediator creation and maps the signals used for communication. That's all and you are good to go. For a list of all methods and features please read the "documentation":https://github.com/pederan/robotlegs-extensions-view-utility/tree/master/docs. Also make sure to check out the source code in the "src_example folder":https://github.com/pederan/robotlegs-extensions-view-utility/tree/master/src_examples/ for "how to use". The examples can be checked out "here":http://mfcampaign.net/pederan/robotlegs-extensions-view-utility/. 
+All you need is your main context class to extend @ViewSignalContext@. This enables the automatic mediator creation and maps the signals used for communication. That's all and you are good to go. For a list of all methods and features please read the "documentation":http://mfcampaign.net/pederan/robotlegs-extensions-view-utility/docs/. Also make sure to check out the source code in the "src_example folder":https://github.com/pederan/robotlegs-extensions-view-utility/tree/master/src_examples/ for "how to use". The examples can be checked out "here":http://mfcampaign.net/pederan/robotlegs-extensions-view-utility/. 
 
 h3. Limitations / More functionality
 
