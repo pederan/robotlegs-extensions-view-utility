@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>All Classes</title><link rel="stylesheet" href="style.css" type="text/css" media="screen"><link rel="stylesheet" href="print.css" type="text/css" media="print"><link rel="stylesheet" href="override.css" type="text/css"></head><body><script language="javascript" type="text/javascript" src="asdoc.js"></script><script language="javascript" type="text/javascript" src="help.js"></script><script language="javascript" type="text/javascript" src="cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'All Classes - Robotlegs signals view utility v0.1';
+				var baseRef = '';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">Robotlegs view utility v0.1</td><td class="titleTableTopNav" align="right"><a href="package-summary.html" onclick="loadClassListFrame('all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="all-index-A.html" onclick="loadClassListFrame('index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="index.html?class-summary.html&amp;all-classes.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">All&nbsp;Classes</td><td class="titleTableSubNav" id="subNav" align="right"></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("All Classes"); titleBar_setSubNav(false,false,false,false,false,false,false,false,false,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div class="MainContent"><br><p>Documentation for classes includes syntax, usage information, and code samples for methods, properties, and event handlers and listeners for those APIs that belong to a specific class in ActionScript. The classes are listed alphabetically. If you are not sure to which class a certain method or property belongs, you can look it up in the Index.</p><br><table cellpadding="3" cellspacing="0" class="summaryTable"><tr><th>&nbsp;</th><th width="20%">Class</th><th width="20%">Package</th><th width="60%">Description</th></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="org/robotlegs/signals/AddViewSignal.html">AddViewSignal</a><br></td><td class="summaryTableCol"><a href="org/robotlegs/signals/package-detail.html" onclick="javascript:loadClassListFrame('org/robotlegs/signals/class-list.html');">org.robotlegs.signals</a></td><td class="summaryTableLastCol">
+	 The ViewController listens for this signal for adding the view to stage.</td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="org/robotlegs/mvcs/ComponentView.html">ComponentView</a><br></td><td class="summaryTableCol"><a href="org/robotlegs/mvcs/package-detail.html" onclick="javascript:loadClassListFrame('org/robotlegs/mvcs/class-list.html');">org.robotlegs.mvcs</a></td><td class="summaryTableLastCol">
+	 Abstract IComponentView implementation
+	 
+	 Subclass this view class and a ComponentViewMediator will automatically be created.
+	 
+	 Override the methods to add animation to the start and end phase of the view.
+	 Call the convenience methods to add, swap or remove views.
+	 Get notified when other views are created.
+	 Release your listeners for garbage collection in the preDestroy or destroy method.
+	 
+	 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="org/robotlegs/mvcs/ComponentViewMediator.html">ComponentViewMediator</a><br></td><td class="summaryTableCol"><a href="org/robotlegs/mvcs/package-detail.html" onclick="javascript:loadClassListFrame('org/robotlegs/mvcs/class-list.html');">org.robotlegs.mvcs</a></td><td class="summaryTableLastCol">
+	 The utilty's default mediator
+	 
+	 
+	 Injects the view as IComponentView, the interface ComponentView conforms to.
+	 Calls abstract methods on the view when the view is added to- and removed from the stage. 
+	 Listens to specific signals dispatched from the view and forward those to the framework.
+	 Listens to signals dispatched from elsewhere in the application (from other mediators and commands) and calls methods on the view as a response to those signals (eg.</td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="org/robotlegs/signals/CreateViewSignal.html">CreateViewSignal</a><br></td><td class="summaryTableCol"><a href="org/robotlegs/signals/package-detail.html" onclick="javascript:loadClassListFrame('org/robotlegs/signals/class-list.html');">org.robotlegs.signals</a></td><td class="summaryTableLastCol">
+	 Mediator, command or context dispatches this signal which instantiate the ViewController
+	 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="org/robotlegs/core/IComponentView.html"><i>IComponentView</i></a><br></td><td class="summaryTableCol"><a href="org/robotlegs/core/package-detail.html" onclick="javascript:loadClassListFrame('org/robotlegs/core/class-list.html');">org.robotlegs.core</a></td><td class="summaryTableLastCol">
+	 The utility's ComponentView contract
+	 
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="org/robotlegs/core/IViewContextMap.html"><i>IViewContextMap</i></a><br></td><td class="summaryTableCol"><a href="org/robotlegs/core/package-detail.html" onclick="javascript:loadClassListFrame('org/robotlegs/core/class-list.html');">org.robotlegs.core</a></td><td class="summaryTableLastCol">
+	 The utility's ViewContextMap contract
+	 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="org/robotlegs/signals/RemoveViewSignal.html">RemoveViewSignal</a><br></td><td class="summaryTableCol"><a href="org/robotlegs/signals/package-detail.html" onclick="javascript:loadClassListFrame('org/robotlegs/signals/class-list.html');">org.robotlegs.signals</a></td><td class="summaryTableLastCol">
+	 The ComponentViewMediator listens for a the remove signal for removing its injected view.</td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="org/robotlegs/signals/StageResized.html">StageResized</a><br></td><td class="summaryTableCol"><a href="org/robotlegs/signals/package-detail.html" onclick="javascript:loadClassListFrame('org/robotlegs/signals/class-list.html');">org.robotlegs.signals</a></td><td class="summaryTableLastCol">
+	 The ComponentViewMediator listens for this stage resize signal and notifies its injected view
+	 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="org/robotlegs/signals/ViewAddedSignal.html">ViewAddedSignal</a><br></td><td class="summaryTableCol"><a href="org/robotlegs/signals/package-detail.html" onclick="javascript:loadClassListFrame('org/robotlegs/signals/class-list.html');">org.robotlegs.signals</a></td><td class="summaryTableLastCol">
+	 Dispatched from the ComponentViewMediator's onRegister method when the view is added to the stage.</td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="org/robotlegs/base/ViewContextMap.html">ViewContextMap</a><br></td><td class="summaryTableCol"><a href="org/robotlegs/base/package-detail.html" onclick="javascript:loadClassListFrame('org/robotlegs/base/class-list.html');">org.robotlegs.base</a></td><td class="summaryTableLastCol">
+	 Mapping class for mapping views to containers, adding unique remove signals and link them to containers.</td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="org/robotlegs/mvcs/ViewController.html">ViewController</a><br></td><td class="summaryTableCol"><a href="org/robotlegs/mvcs/package-detail.html" onclick="javascript:loadClassListFrame('org/robotlegs/mvcs/class-list.html');">org.robotlegs.mvcs</a></td><td class="summaryTableLastCol">
+	 View controller for adding new views.</td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="org/robotlegs/signals/ViewRemovedSignal.html">ViewRemovedSignal</a><br></td><td class="summaryTableCol"><a href="org/robotlegs/signals/package-detail.html" onclick="javascript:loadClassListFrame('org/robotlegs/signals/class-list.html');">org.robotlegs.signals</a></td><td class="summaryTableLastCol">
+	 Dispatched from the ComponentViewMediator's onRemove method when the view is removed from the stage.</td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="org/robotlegs/mvcs/ViewSignalCommand.html">ViewSignalCommand</a><br></td><td class="summaryTableCol"><a href="org/robotlegs/mvcs/package-detail.html" onclick="javascript:loadClassListFrame('org/robotlegs/mvcs/class-list.html');">org.robotlegs.mvcs</a></td><td class="summaryTableLastCol">
+	 Abstract MVCS SignalCommand implementation.</td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="org/robotlegs/mvcs/ViewSignalContext.html">ViewSignalContext</a><br></td><td class="summaryTableCol"><a href="org/robotlegs/mvcs/package-detail.html" onclick="javascript:loadClassListFrame('org/robotlegs/mvcs/class-list.html');">org.robotlegs.mvcs</a></td><td class="summaryTableLastCol">
+	 Abstract MVCS SignalContext implementation
+	 
+	 Extend ViewSignalContext in your main context class to enable automatic view-mediator and to access convenience.</td></tr></table><p></p><center class="copyright"><footer></footer><br/>Wed Aug 31 2011, 09:12 AM +02:00  </center></div></body></html><!--<br/>Wed Aug 31 2011, 09:12 AM +02:00  -->

@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><meta name="keywords" content="IComponentView,org.robotlegs.core.IComponentView,addViewRequested,animationInCompleted,animationOutCompleted,animationOutStarted,autoRemove,removeViewRequested,removeViewsInContainerRequested,swapViewRequested,viewButtonClicked,viewClassRequest,viewParameters,addChild,addedToStage,animateIn,animateOut,containerInstanceIsMapped,destroy,getContainerClassByView,getContextRemoveSignalByClass,getContextRemoveSignalByContainerClass,getContextRemoveSignalByView,getMappedContainerInstance,mapContainerByView,mapContainerClassToView,mapContainerInstanceToView,onCreateView,onStageResized,onViewAdded,onViewRemoved,preDestroy,removeMe,unMapContainerByView,verifyViewClass"><title>org.robotlegs.core.IComponentView</title></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'IComponentView - Robotlegs signals view utility v0.1';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">Robotlegs view utility v0.1</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?org/robotlegs/core/IComponentView.html&amp;org/robotlegs/core/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">IComponentView</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("IComponentView"); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">org.robotlegs.core</a></td></tr><tr><td class="classHeaderTableLabel">Interface</td><td class="classSignature">public  interface  IComponentView</td></tr><tr><td class="classHeaderTableLabel">Implementors</td><td> <a href="../../../org/robotlegs/mvcs/ComponentView.html">ComponentView</a></td></tr></table><p></p><p></p><p></p>
+	 The utility's ComponentView contract
+	 
+	 <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#addViewRequested" class="signatureLink">addViewRequested</a> : Signal<div class="summaryTableDescription">[read-only] 
+		 Signal which ComponentViewMediator listens to.</div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#animationInCompleted" class="signatureLink">animationInCompleted</a> : Signal<div class="summaryTableDescription">[read-only] 
+		 Signal which ComponentViewMediator listens to.</div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#animationOutCompleted" class="signatureLink">animationOutCompleted</a> : Signal<div class="summaryTableDescription">[read-only] 
+		 Signal which ComponentViewMediator listens to.</div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#animationOutStarted" class="signatureLink">animationOutStarted</a> : Signal<div class="summaryTableDescription">[read-only] 
+		 Signal which ComponentViewMediator listens to.</div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#autoRemove" class="signatureLink">autoRemove</a> : Boolean<div class="summaryTableDescription">
+		 Check if the view should be automatically removed when a context remove signal is dispatched on this view's context 
+		 
+		 </div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#removeViewRequested" class="signatureLink">removeViewRequested</a> : Signal<div class="summaryTableDescription">[read-only] 
+		 Signal which ComponentViewMediator listens to.</div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#removeViewsInContainerRequested" class="signatureLink">removeViewsInContainerRequested</a> : Signal<div class="summaryTableDescription">[read-only] 
+		 Signal which ComponentViewMediator listens to.</div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#swapViewRequested" class="signatureLink">swapViewRequested</a> : Signal<div class="summaryTableDescription">[read-only] 
+		 Signal which ComponentViewMediator listens to.</div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#viewButtonClicked" class="signatureLink">viewButtonClicked</a> : Signal<div class="summaryTableDescription">[read-only] 
+		 Signal which ComponentViewMediator listens to.</div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#viewClassRequest" class="signatureLink">viewClassRequest</a> : Class<div class="summaryTableDescription">[read-only] 
+		 The value for the new class type, which in turn ComponentViewMediator relays
+		 
+		 </div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#viewParameters" class="signatureLink">viewParameters</a> : Array<div class="summaryTableDescription">[read-only] 
+		 The parameters that should be passed to the constructor of the new view - passed as an array
+		 </div></td><td class="summaryTableOwnerCol">IComponentView</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addChild()" class="signatureLink">addChild</a>(child:DisplayObject):DisplayObject</div><div class="summaryTableDescription"> 
+		 Overriden method in an IComponentView to help adding children to a holderclip
+		 </div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addedToStage()" class="signatureLink">addedToStage</a>():void</div><div class="summaryTableDescription">
+		 Abstract method called from ComponentViewMediator's onRegister method.</div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#animateIn()" class="signatureLink">animateIn</a>():void</div><div class="summaryTableDescription">
+		 Abstract method called from ComponentViewMediator's onRegister method.</div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#animateOut()" class="signatureLink">animateOut</a>():void</div><div class="summaryTableDescription">
+		 Method called from ComponentViewMediator when a remove signal is received.</div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#destroy()" class="signatureLink">destroy</a>():void</div><div class="summaryTableDescription">
+		 Abstract method called when the view is removed from stage.</div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#onCreateView()" class="signatureLink">onCreateView</a>(viewClass:Class, ... args):void</div><div class="summaryTableDescription">
+		 Abstract method called from mediator when a new view is requested (mediator listens to CreateViewSignal).</div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#onStageResized()" class="signatureLink">onStageResized</a>():void</div><div class="summaryTableDescription">
+		 Abstract method called from ComponentViewMediator's onRegister method and when stage resizes.</div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#onViewAdded()" class="signatureLink">onViewAdded</a>(viewInstance:Object):void</div><div class="summaryTableDescription">
+		 Abstract method called from the mediator when a new view is added to the stage (listens to ViewAddedSignal).</div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#onViewRemoved()" class="signatureLink">onViewRemoved</a>(viewInstance:Object):void</div><div class="summaryTableDescription">
+		 Abstract method called from the mediator when any view is removed from the stage (mediator listens to ViewRemovedSignal).</div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#preDestroy()" class="signatureLink">preDestroy</a>():void</div><div class="summaryTableDescription">
+		 Abstract method called from ComponentViewMediator's when the view is told to step away (at animate out).</div></td><td class="summaryTableOwnerCol">IComponentView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeMe()" class="signatureLink">removeMe</a>():void</div><div class="summaryTableDescription">
+		 Convenience method to remove this view
+		 
+		 Called from ComponentViewMediator's convenience method for removing it's injected view.
+		 
+		 </div></td><td class="summaryTableOwnerCol">IComponentView</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="addViewRequested"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addViewRequested</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>addViewRequested:Signal</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Signal which <code>ComponentViewMediator</code> listens to.
+		 
+		 <p>Dispatches this signal when a new view should be added.
+		  Results in adding the new view to the [mapped] context.</p>
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get addViewRequested():Signal</code><br/></div><a name="propertyDetail"></a><a name="animationInCompleted"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">animationInCompleted</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>animationInCompleted:Signal</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Signal which <code>ComponentViewMediator</code> listens to.
+		 
+		 <p>This signal is dispatched when the view has completed animating in. 
+		 Use this method to tell the mediator that the animation in has completed.</p>
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get animationInCompleted():Signal</code><br/></div><a name="propertyDetail"></a><a name="animationOutCompleted"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">animationOutCompleted</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>animationOutCompleted:Signal</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Signal which <code>ComponentViewMediator</code> listens to. 
+		 
+		 <p>Dispatches this signal when the view has completed animating out. 
+		 Use this method to tell the mediator that the animation out has completed.</p>
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get animationOutCompleted():Signal</code><br/></div><a name="propertyDetail"></a><a name="animationOutStarted"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">animationOutStarted</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>animationOutStarted:Signal</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Signal which <code>ComponentViewMediator</code> listens to.
+		 
+		 <p>Dispatches this signal when the view starts animating out. 
+		 Use this method to tell the mediator that the animation out has started.</p>
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get animationOutStarted():Signal</code><br/></div><a name="propertyDetail"></a><a name="autoRemove"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">autoRemove</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>autoRemove:Boolean</code><p></p><p></p><p>
+		 Check if the view should be automatically removed when a context remove signal is dispatched on this view's context 
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get autoRemove():Boolean</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set autoRemove(value:Boolean):void</code><br/></div><a name="propertyDetail"></a><a name="removeViewRequested"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeViewRequested</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>removeViewRequested:Signal</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Signal which <code>ComponentViewMediator</code> listens to.
+		 
+		 <p>Dispatches this signal when a view of a spesific class type should be removed.</p>
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get removeViewRequested():Signal</code><br/></div><a name="propertyDetail"></a><a name="removeViewsInContainerRequested"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeViewsInContainerRequested</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>removeViewsInContainerRequested:Signal</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Signal which <code>ComponentViewMediator</code> listens to.
+		 
+		 <p>Dispatches this signal when all removable views on the requested view container's context should be removed.</p>
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get removeViewsInContainerRequested():Signal</code><br/></div><a name="propertyDetail"></a><a name="swapViewRequested"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">swapViewRequested</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>swapViewRequested:Signal</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Signal which <code>ComponentViewMediator</code> listens to.
+		 
+		 <p>Dispatches this signal when a new view should replace another view. Results in a new view being created and added to the [mapped] context.</p>
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get swapViewRequested():Signal</code><br/></div><a name="propertyDetail"></a><a name="viewButtonClicked"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">viewButtonClicked</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>viewButtonClicked:Signal</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Signal which <code>ComponentViewMediator</code> listens to.
+		 
+		 <p>Dispatches this signal when a button that is hooked up to method <code>onButtonClicked</code> is clicked.</p>
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get viewButtonClicked():Signal</code><br/></div><a name="propertyDetail"></a><a name="viewClassRequest"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">viewClassRequest</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>viewClassRequest:Class</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 The value for the new class type, which in turn <code>ComponentViewMediator</code> relays
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get viewClassRequest():Class</code><br/></div><a name="propertyDetail"></a><a name="viewParameters"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">viewParameters</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>viewParameters:Array</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 The parameters that should be passed to the constructor of the new view - passed as an array
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get viewParameters():Array</code><br/></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="addChild()"></a><a name="addChild(flash.display.DisplayObject)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addChild</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function addChild(child:DisplayObject):DisplayObject</code><p></p><p></p><p> 
+		 Overriden method in an IComponentView to help adding children to a holderclip
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">child</span>:DisplayObject</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>DisplayObject</code></td></tr></table></div><a name="addedToStage()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addedToStage</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function addedToStage():void</code><p></p><p></p><p>
+		 Abstract method called from <code>ComponentViewMediator</code>'s onRegister method. 
+		 The view is added to stage and has a reference to the stage object.
+		 
+		 <p>Override and use for adding functionality when the view has been added to stage.</p>
+		 
+		 </p></div><a name="animateIn()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">animateIn</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function animateIn():void</code><p></p><p></p><p>
+		 Abstract method called from <code>ComponentViewMediator</code>'s onRegister method.
+		 
+		 <p>Calls <code>ComponentView</code>'s onAnimationInStarted and onAnimationInCompleted as default</p>
+		 
+		 <p>Override and implement animation in effect</p>
+		 </p></div><a name="animateOut()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">animateOut</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function animateOut():void</code><p></p><p></p><p>
+		 Method called from <code>ComponentViewMediator</code> when a remove signal is received.
+		 
+		 <p>Calls <code>ComponentView</code>'s onAnimationOutStarted and onAnimationOutCompleted as default</p>
+		 
+		 <p>Override and implement animation out effect</p>
+		 
+		 <p>NOTE: To add the new view pass true either to method onAnimationOutStarted or onAnimationOutCompleted in <code>ComponentView</code></p>
+		 </p></div><a name="destroy()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">destroy</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function destroy():void</code><p></p><p></p><p>
+		 Abstract method called when the view is removed from stage.
+		 
+		 <p>Called from <code>ComponentViewMediator</code>'s onRemove method.</p>
+		 
+		 <p>Override and place your cleanup code here (release your listeners for garbage collection).</p>
+		 </p></div><a name="onCreateView()"></a><a name="onCreateView(Class,restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">onCreateView</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function onCreateView(viewClass:Class, ... args):void</code><p></p><p></p><p>
+		 Abstract method called from mediator when a new view is requested (mediator listens to CreateViewSignal). 
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">viewClass</span>:Class</code> &mdash; The class type of the new view
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code>... <span class="label">args</span></code> &mdash; The parameters for the constructor (optional)
+		 </td></tr></table></p></div><a name="onStageResized()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">onStageResized</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function onStageResized():void</code><p></p><p></p><p>
+		 Abstract method called from <code>ComponentViewMediator</code>'s onRegister method and when stage resizes.
+		 <code>ComponentViewMediator</code> listens to Event.RESIZE on stage and calls this method.
+		 
+		 <p>Override and move your view according to the stage width and height.</p>
+		 </p></div><a name="onViewAdded()"></a><a name="onViewAdded(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">onViewAdded</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function onViewAdded(viewInstance:Object):void</code><p></p><p></p><p>
+		 Abstract method called from the mediator when a new view is added to the stage (listens to ViewAddedSignal). 
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">viewInstance</span>:Object</code> &mdash; A reference to the newly created object
+		 </td></tr></table></p></div><a name="onViewRemoved()"></a><a name="onViewRemoved(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">onViewRemoved</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function onViewRemoved(viewInstance:Object):void</code><p></p><p></p><p>
+		 Abstract method called from the mediator when any view is removed from the stage (mediator listens to ViewRemovedSignal).
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">viewInstance</span>:Object</code> &mdash; A reference to the removed object
+		 </td></tr></table></p></div><a name="preDestroy()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">preDestroy</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function preDestroy():void</code><p></p><p></p><p>
+		 Abstract method called from <code>ComponentViewMediator</code>'s when the view is told to step away (at animate out).
+		 
+		 <p>This method is designed for disabling/removing listeners before the animation out starts</p>
+		 </p></div><a name="removeMe()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeMe</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeMe():void</code><p></p><p></p><p>
+		 Convenience method to remove this view
+		 
+		 <p>Called from <code>ComponentViewMediator</code>'s convenience method for removing it's injected view.</p>
+		 
+		 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Wed Aug 31 2011, 09:12 AM +02:00  </center></div></body></html><!--<br/>Wed Aug 31 2011, 09:12 AM +02:00  -->

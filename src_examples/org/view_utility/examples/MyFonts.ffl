@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<library name="MyFonts" output="libs" format="1" static="false">
+	<font id="arial" family="Arial" style="0" cs="1,2,3,4,5" type="0" path="" ascff="false" autoId="true"/>
+	<font id="copperplateGothicBold" family="Copperplate Gothic Bold" style="0" cs="1,2,3,4,5" type="0" path="" ascff="false" autoId="true"/>
+</library>

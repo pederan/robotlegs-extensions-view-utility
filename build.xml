@@ -1,0 +1,55 @@
+<project name="Robotlegs Extensions View Utility" default="main" >
+
+	<property name="project.name" value="robotlegs-extensions-view-utility" />
+	<property name="build.version" value="0.1" />
+	<property name="build.dir" value="build" />
+	<property name="build.name" value="${project.name}${build.version}.swc" />
+	<property name="asdoc.dir" value="/Applications/FDT/plugins/com.powerflasher.fdt.shippedFlexSDK4_4.0.0.14159_1000/flex/bin" />
+	<property name="asdoc.output.dir" value="docs" />
+	
+	<target name="main" depends="delete-build-swc, create-build-SWC" />
+	<target name="clean and create as docs" depends="clean-asdoc-directory, create-docs" />
+	
+	<!-- create swc -->
+	<target name="create-build-SWC">
+		<fdt.launch.library
+		debug="false"
+		projectname="robotlegs-extensions-view-utility"
+		autoaddclasspath="false"
+		autoaddswcs="true"
+		autoaddrsls="false"
+		target="${basedir}${build.dir}/${build.name}"
+		compilerarguments="	-include-sources='${basedir}/src'
+							-external-library-path+='${basedir}/build/libs/'
+							-target-player=10.0" />
+		<echo>SWC created successfully</echo>
+	</target>
+	
+	<!-- deletes the build swc -->  
+    <target name="delete-build-swc" >  
+       	<delete file="${build.dir}/${build.name}"></delete> 
+    	<echo>SWC deleted successfully</echo>
+    </target>
+	
+	<target name="create-docs">
+		<exec executable="${asdoc.dir}/asdoc" failonerror="true">
+			<arg line="-external-library-path='${build.dir}/libs/'" />
+			<arg line="-doc-sources 'src/'"/>
+			<arg line="-output 'docs'"/> 
+			<arg line="-main-title 'Robotlegs view utility v${build.version}'"/> 
+			<arg line="-window-title 'Robotlegs signals view utility v${build.version}'"/> 
+			<arg line="-package org.robotlegs.base 'Base classes used to build custom Robotlegs frameworks'"/> 
+			<arg line="-package org.robotlegs.core 'The core Robotlegs Framework apparatus contracts'"/> 
+			<arg line="-package org.robotlegs.mvcs 'The reference MVCS Robotlegs Framework implementation'"/> 
+			<arg line="-package org.robotlegs.signals 'The as3signals used for messaging'"/> 
+		</exec>
+		<echo>ASDOC created successfully</echo> 
+	</target>
+	
+	<!-- deletes and recreates the asdoc directory -->
+	<target name="clean-asdoc-directory" >  
+       <delete dir="${asdoc.output.dir}" />  
+       <mkdir  dir="${asdoc.output.dir}" />  
+    </target>  
+    
+</project>    
