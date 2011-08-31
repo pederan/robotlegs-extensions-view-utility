@@ -1,0 +1,51 @@
+h2. Robotlegs View Utility
+
+Robotlegs View Utility is an interface based view utility designed to provide your Robotlegs views with default behavior and to help them perform "typical view tasks". The utility is built on top of the "Robotlegs":http://www.robotlegs.org mvc+s framework and is using "AS3Signals"://https://github.com/robertpenner/as3-signals as the messaging tool.
+
+This utility creates a default mediator called @ComponentViewMediator@ every time a view that extends ComponentView is added to the stage. The @ComponentViewMediator@ listen to specific signals dispatched from other tiers in the application and calls methods on it's injected interface mapped view. It also provides you with convenience methods in the context, command, mediator and view classes. With these methods you can add, swap, remove one or multiple views from any scope in the application. You can also map buttons in your view to add- or swap view actions and map views into a container. The @ComponentViewMediator@ can easily be extended to override default behavior and/or add extra functionality. 
+
+No native flash events are used. Instead all the communication between the application tiers is made possible through signals.
+
+The utility consists of six essential classes:
+* ViewSignalContext
+* ViewContextMap
+* ViewSignalCommand 
+* ViewController
+* ComponentViewMediator
+* ComponentView
+
+For more details about specific classes and the signals please refer to the documentation found in the "docs folder":http://https://github.com/pederan/robotlegs-extensions-view-utility/tree/master/docs/.
+
+h3. Minimum requirements
+
+These libraries are required for the utility (included in the download package):
+
+* "Robotlegs framework":https://github.com/robotlegs/robotlegs-framework
+* "AS3Signals":https://github.com/robertpenner/as3-signals
+* "View Interface Mediator Map":https://github.com/piercer/robotlegs-extensions-ViewInterfaceMediatorMap
+* "SignalMediator":https://github.com/Stray/robotlegs-utilities-SignalMediator
+* "SignalCommandMap":https://github.com/destroytoday/signals-extensions-CommandSignal 
+
+Tested with Robotlegs 1.4 and ASSignals 0.7 and 0.8 but should probably work with any 1.x Robotlegs versions and AS3Signals 0.7.
+
+The minimum Flash Player requirement is version 9, but the @ComponentViewMediator@ extends SignalMediator, so if you want to use the convenience methods @addToSignal@ or @addOnceToSignal@ (uses Vector class) you need to target FP 10.
+
+h3. Usage / Examples
+
+All you need is your main context class to extend @ViewSignalContext@. This enables the automatic mediator creation and maps the signals used for communication. That's all and you are good to go. For a list of all methods and features please read the "documentation":http://https://github.com/pederan/robotlegs-extensions-view-utility/tree/master/docs/. Also make sure to check out the source code in the "src_example folder":":http://https://github.com/pederan/robotlegs-extensions-view-utility/tree/master/src_example/ for "how to use". The examples can be checked out "here":http://mfcampaign.net/pederan/robotlegs-extensions-view-utility/. 
+
+h3. Limitations / More functionality
+
+Let me know what features you are missing or what you think should be improved and I can add it to a future release. For now, you could just extend the default behavior and implement your custom functionality.
+
+h3. Tested?
+
+This utility lacks proper testing, maybe you can help me out?
+
+h3. Special thanks
+
+A special thanks to Conrad Winchester for making the view interface mediator map that makes the automatic mediator creation possible. Also a big thanks to all the other Robotlegs extension contributors and to Robert Penner for AS3Signals.  
+
+h3. Feedback
+
+Feedback is highly welcomed. Please send me an email on Github or to my company email peder at mediafront.no. I'm @pederan on Twitter.
